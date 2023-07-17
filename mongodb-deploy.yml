@@ -35,11 +35,11 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: my-service
+  name: mongo-service
 spec:
   selector:
-    app.kubernetes.io/name: MyApp
+    app.kubernetes.io/name: mongodb
   ports:
     - protocol: TCP
-      port: 80
-      targetPort: 9376
+      port: 27017
+      targetPort: 27017
